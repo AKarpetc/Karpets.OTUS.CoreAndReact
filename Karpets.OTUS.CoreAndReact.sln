@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Karpets.OTUS.CoreAndReact", "Karpets.OTUS.CoreAndReact\Karpets.OTUS.CoreAndReact.csproj", "{452B9EB9-B7EF-4A3D-ABC8-0E7D6338D61B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{452B9EB9-B7EF-4A3D-ABC8-0E7D6338D61B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{452B9EB9-B7EF-4A3D-ABC8-0E7D6338D61B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{452B9EB9-B7EF-4A3D-ABC8-0E7D6338D61B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{452B9EB9-B7EF-4A3D-ABC8-0E7D6338D61B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC758329-2FAB-475B-80AB-425260CE0AB9}
+	EndGlobalSection
+EndGlobal

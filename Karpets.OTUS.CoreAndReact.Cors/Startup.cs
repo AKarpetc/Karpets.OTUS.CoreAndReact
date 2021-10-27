@@ -16,6 +16,7 @@ namespace Karpets.OTUS.CoreAndReact.Cors
 {
     public class Startup
     {
+        readonly string MyOriginClients = "_myOriginClients";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -26,6 +27,14 @@ namespace Karpets.OTUS.CoreAndReact.Cors
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyOriginClients,
+                                  builder =>
+                                  {
+                                      builder.WithOrigins("http://localhost:3000");
+                                  });
+            });
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -48,11 +57,13 @@ namespace Karpets.OTUS.CoreAndReact.Cors
 
             app.UseRouting();
 
+            app.UseCors(MyOriginClients);
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapControllers().RequireCors(MyOriginClients); ;
             });
         }
     }
